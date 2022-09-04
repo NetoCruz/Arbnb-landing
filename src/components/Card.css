@@ -1,0 +1,23 @@
+.card--main{
+    width: 180px;
+    
+}
+.card--star{
+    display: flex;
+}
+
+.card--star img {
+    margin-right: 5px;
+}
+
+.card--star span {
+    margin-right: 5px;
+}
+
+.card--p  {
+    text-align: left;
+}
+
+.card--price{
+    font-weight: 600;
+}
