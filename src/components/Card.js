@@ -1,24 +1,24 @@
 import React from "react";
-import Img from '../images/image1.png'
+
 import star from '../images/Star.png'
 import './Card.css'
 
-export default function Card(){
+export default function Card(props){
     return(
     <section className="card--main">
-        <img src={Img} alt="card" />
+        <img className="card--image" src={props.img} alt="card" />
 
         <div className="card--star">
         <img src={star} alt="star" />
-        <span>5.0</span>
-        <span>(6)</span>
-        <span>USA</span>
+        <span>{props.rating}</span>
+        <span>({props.reviewCount})</span>
+        <span>{props.location}</span>
         </div>
         <div className="card--p">
-        <p>Life lessons with Katie Zaferes</p>
+        <p>{props.title}</p>
         </div>
         <div className="card--price">
-        <span>From $136 / person</span>
+        <span>From ${props.price}/person</span>
         </div>
 
     </section>
